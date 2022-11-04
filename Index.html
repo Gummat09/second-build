@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Z83 Multi-step form</title>
+</head>
+<body>
+    <div class="back_section">
+        <div class="logo"></div>
+        <div class="progress_bar">
+            <div class="progress_count">
+            </div>
+        </div>
+
+        <div class="progress_bar_titles">
+            <ul>
+                <li class="active">Personal Information</li>
+                <li >Language Proficiency</li>
+                <li >Work Experience</li>          
+            </ul>
+        </div>
+
+        <!--First Form Step-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+        <form action="#" class="form_page1 active" id="section1">
+            <h3 class="title">Personal Information</h3>
+            <div class="form_content">
+                <div class="form_group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" class="inputs">
+                </div>
+                <div class="form_group">
+                    <label for="first_name">First Names:</label>
+                    <input type="text" class="inputs">
+                </div>
+                <div class="form_group">
+                    <label for="d_o_b">Date Of Birth:</label>
+                    <input type="date" class="inputs">
+                </div>
+                <div class="form_group">
+                    <label for="id_number">ID Number:</label>
+                    <input type="text" class="inputs">
+                </div>
+                <div class="form_group">
+                    <label for="race">Race:</label>
+                    <select name="race drop_down" id="race" class="inputs">
+                        <option value="default_option">--Select-Option--</option>
+                        <option value="african">African</option>
+                        <option value="white">White</option>
+                        <option value="coloured">Coloured</option>
+                        <option value="indian">Indian</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="gender">Gender:</label>
+                    <select name="gender drop_down" id="race" class="inputs">
+                        <option value="default_option">--Select-Option--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn_next  btn" id="next1">Next</button>
+        </form>
+
+        <!--Second Form Step-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+        <form action="#" class="form_page1 form_page2" id="section2">
+            <h3 class="title">Personal Information <span style="font-weight: 300;">(Cont...)</span></h3>
+            <div class="form_content">
+                <div class="form_group">
+                    <label for="disability">Do you have any disability:</label>
+                    <select name="disability drop_down" id="disability" class="inputs">
+                        <option value="default_option">--Select-Option--</option>
+                        <option value="yes_disability">Yes</option>
+                        <option value="no_disability">No</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="citizen">Are you a South African Citizen:</label>
+                    <select name="citizen drop_down" id="citizen" class="inputs">
+                        <option value="default_option">--Select-Option--</option>
+                        <option value="yes_citizen">Yes</option>
+                        <option value="no_citizen">No</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="nationationality">If no, what is your Nationality:</label>
+                    <input type="text" class="inputs">
+                </div>
+                <div class="form_group">
+                    <label for="permit">And do you have a valid work Permit:</label>
+                    <select name="permit drop_down" id="permit" class="inputs">
+                        <option value="default_option">--Select-Option--</option>
+                        <option value="yes_permit">Yes</option>
+                        <option value="no_permit">No</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="offence">Have you ever been convicted of a criminal offence or been dismissed from employment?:</label>
+                    <select name="offence drop_down" id="offence" class="inputs">
+                        <option value="default_option">--Select-Option--</option>
+                        <option value="yes_offence">Yes</option>
+                        <option value="no_offence">No</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="gender">If your profession or occupation requires State or official registration, provide date and particulars of registration.:</label>
+                    <input type="text" class="inputs">
+                </div>
+            </div>
+
+            <h3 class="title title2">Contact Details</h3>
+
+            <div class="form_content">
+                <div class="form_group">
+                    <label for="language">Preferred language for correspondence:</label>
+                    <input type="text" class="inputs">
+                </div>
+                <div class="form_group">
+                    <label for="tel_number">Preferred method for correspondence</label>
+                    <select name="offence drop_down" id="method_comm" class="inputs">
+                        <option value="default_option">--Select-Option--</option>
+                        <option value="post">Post</option>
+                        <option value="email">Email</option>
+                        <option value="fax">Fax</option>
+                        <option value="tel">Telephone</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="gender">Correspondence contact 
+                        details (in terms of above):
+                        </label>
+                    <input type="text" class="inputs">
+                </div>
+            </div>
+
+
+            <button class="btn_next btn" id="next2">Next</button>
+            <button class="btn_prev btn" id="prev1">Prev</button>
+        </form>
+
+<!--third Form Step-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+<form action="#" class="form_page1 form_page3" id="section2">
+    <h3 class="title">Language Proficiency</h3>
+    <h5>Language Proficiency -<span>state "Good", "Fair" or "Poor"</span></h5>
+    <div class="form_content">
+        <div class="form_group">
+            <label for="speak">Speak:</label>
+            <input type="text" class="inputs">
+        </div>
+        <div class="form_group">
+            <label for="state">State:</label>
+            <select name="permit drop_down" id="permit" class="inputs">
+                <option value="default_option">--Select-Option--</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+        </div>
+
+        <div class="form_group">
+            <label for="read_write">Read or Write:</label>
+            <input type="text" class="inputs">
+        </div>
+        <div class="form_group">
+            <label for="state">State:</label>
+            <select name="permit drop_down" id="permit" class="inputs">
+                <option value="default_option">--Select-Option--</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+        </div>
+       
+    </div>
+
+    <h3 class="title title2">Qualifications</h3>
+
+    <div class="form_content">
+        <div class="form_group">
+            <label for="school">Name of School / Technical College:</label>
+            <input type="text" class="inputs">
+        </div>
+        <div class="form_group">
+            <label for="qualification">Highest qualification obtained:</label>
+            <input type="text" class="inputs">
+        </div>
+        
+        <div class="form_group">
+            <label for="gender">Year Obtained
+                </label>
+            <input type="date" class="inputs">
+        </div>
+        <div class="form_group">
+            <label for="gender">Current Study (Institution & Qualification)
+                </label>
+            <input type="date" class="inputs">
+        </div>
+    </div>
+
+
+    <button class="btn_next btn" id="next3">Next</button>
+    <button class="btn_prev btn" id="prev2">Prev</button>
+</form>
+
+<!--4th step Form Step-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+<form action="#" class="form_page1 form_page4" id="section2">
+    <h3 class="title">Work Experience</h3>
+    <div class="form_content">
+
+        <div class="form_group">
+            <label for="employer">Employer (including current employer):</label>
+            <input type="text" class="inputs">
+        </div>
+        <div class="form_group">
+            <label for="leaving_reason">Reason for Leaving:</label>
+            <input type="text" class="inputs">
+        </div>
+        <div class="form_group">
+            <label for="post_held">Post Held:</label>
+            <input type="text" class="inputs">
+        </div>
+        
+
+        
+        <div class="form_group">
+            <label for="from">From:</label>
+            <input type="date" class="inputs">
+        </div>
+        <div class="form_group">
+            <label for="To">To:</label>
+            <input type="date" class="inputs">
+        </div>
+        
+        <div class="form_group">
+            <label for="condition">If you were previously employed in the Public Service, is there any condition that prevents your re-employment:</label>
+            <select name="condition drop_down" id="method_comm" class="inputs">
+                <option value="default_option">--Select-Option--</option>
+                <option value="yes_condition">Yes</option>
+                <option value="no_condition">No</option>
+                
+            </select>
+        </div>
+        <div class="form_group">
+            <label for="reg_pat">If yes, Provide the name of the previous employing department and indicate the nature of the condition.
+                </label>
+            <input type="text" class="inputs">
+        </div>
+    </div>
+
+    <h3 class="title title2">References</h3>
+
+    <div class="form_content">
+        <div class="form_group">
+            <label for="name">Name:</label>
+            <input type="text" class="inputs">
+        </div>
+        <div class="form_group">
+            <label for="rel">Relationship to you:</label>
+            <input type="text" class="inputs">
+        </div>
+        
+        <div class="form_group">
+            <label for="gender">Tel. No. (office hours)</label>
+            <input type="number" class="inputs">
+        </div>
+        
+    </div>
+
+
+    <button class="btn_next btn" id="next4" disabled >Next</button>
+    <button class="btn_prev btn" id="prev3">Prev</button>
+</form>
+
+        <div class="btn_submit">
+            <Button id="submit" class="btn" disabled>Submit</Button>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
